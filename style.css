@@ -1,0 +1,316 @@
+/* General styling for body, headers, and links */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav {
+    overflow-x: auto;
+    white-space: nowrap;
+    background-color: #444;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+.banner {
+    background-image: url('https://images.pexels.com/photos/436413/pexels-photo-436413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.banner h2 {
+    font-size: 3rem;
+}
+
+.banner p {
+    font-size: 1.5rem;
+}
+
+.banner button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.banner button:hover {
+    background-color: #0056b3;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about {
+    background-color: #f8f9fa;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Movies Section */
+.movies {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.movies h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.movies-wrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px;
+    gap: 20px; /* Spacing between movie items */
+}
+
+.movie {
+    min-width: 200px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer; /* Indicate that the item is clickable */
+}
+
+.movie img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.movie h3 {
+    padding: 15px;
+    font-size: 1.2rem;
+}
+
+.movie:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Movie Detail Modal */
+.movie-detail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.movie-detail h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.movie-detail p {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.movie-detail a {
+    background-color: #007bff;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.movie-detail a:hover {
+    background-color: #0056b3;
+}
+
+.movie-detail button {
+    background-color: #ff4444;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.movie-detail button:hover {
+    background-color: #cc0000;
+}
+
+/* Genre grid styling */
+.genre-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.genre a {
+    display: block;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.genre a:hover {
+    background-color: #007bff;
+}
+
+/* Downloads Page */
+#downloads {
+    padding: 50px 20px;
+}
+
+#downloads ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#downloads ul li {
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#downloads ul li a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#downloads ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Page */
+#contact {
+    padding: 50px 20px;
+    background-color: #ffffff; /* Background color for the contact section */
+    border-radius: 8px; /* Rounded corners for the contact section */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for a subtle effect */
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 600px; /* Limit the width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+    background-color: #f9f9f9; /* Light background color for the form */
+    padding: 20px; /* Padding inside the form */
+    border-radius: 8px; /* Rounded corners for the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for the form */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Make input fields take the full width of the form */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing only */
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #0056b3;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .movies-wrapper {
+        display: block;
+    }
+
+    .movie {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riz Stream</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Riz Stream</h1><br>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#movies-section">Movies</a></li>
+                <li><a href="downloads.html">Downloads</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="genres.html">Genres</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="banner">
+        <h2>Watch Latest Movies</h2>
+        <button onclick="scrollToSection('movies-section')">Browse Movies</button>
+    </section>
+
+    <section class="movies" id="movies-section">
+        <h2>Latest Movies</h2>
+        <div class="movies-wrapper" id="scroll-wrapper">
+            <div class="movie" onclick="showMovieDetails('movie1')">
+                <img src="https://m.media-amazon.com/images/I/91JjfX4vQrL._AC_SL1500_.jpg" alt="Donnie Darko (2001)">
+                <h3>Donnie Darko (2001)</h3>
+            </div>
+            <div class="movie" onclick="showMovieDetails('movie2')">
+                <img src="https://m.media-amazon.com/images/I/61tbxfA-uPL._AC_UF1000,1000_QL80_FMwebp_.jpg" alt="Fight Club (1999)">
+                <h3>Fight Club (1999)</h3>
+            </div>
+            <div class="movie" onclick="showMovieDetails('movie3')">
+                <img src="https://m.media-amazon.com/images/M/MV5BOTUwODM5MTctZjczMi00OTk4LTg3NWUtNmVhMTAzNTNjYjcyXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_QL75_UX380_CR0,16,380,562_.jpg" alt="Se7en (1995)">
+                <h3>Se7en (1995)</h3>
+            </div>
+            <div class="movie" onclick="showMovieDetails('movie4')">
+                <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sab9dcb41a8c341d38ed128e3c392c1232.jpg_640x640Q90.jpg_.webp" alt="Nightcrawler (2014)">
+                <h3>Nightcrawler (2014)</h3>
+            </div>
+            <div class="movie" onclick="showMovieDetails('movie5')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTJiCQO_IsswOXVwC-q3bSeI4n6rxdjp5YMqqLR6Zeo20EogXm007zOVGF&s=10" alt="Shutter Island (2010)">
+                <h3>Shutter Island (2010)</h3>
+            </div>
+            <div class="movie" onclick="showMovieDetails('movie6')">
+                <img src="images/movie6.jpg" alt="Movie 6">
+                <h3>Movie Title 6</h3>
+            </div>
+            <div class="movie" onclick="showMovieDetails('movie7')">
+                <img src="images/movie7.jpg" alt="Movie 7">
+                <h3>Movie Title 7</h3>
+            </div>
+            <div class="movie" onclick="showMovieDetails('movie8')">
+                <img src="images/movie8.jpg" alt="Movie 8">
+                <h3>Movie Title 8</h3>
+            </div>
+            <div class="movie" onclick="showMovieDetails('movie9')">
+                <img src="images/movie9.jpg" alt="Movie 9">
+                <h3>Movie Title 9</h3>
+            </div>
+            <div class="movie" onclick="showMovieDetails('movie10')">
+                <img src="images/movie10.jpg" alt="Movie 10">
+                <h3>Movie Title 10</h3>
+            </div>
+            <div class="movie" onclick="showMovieDetails('movie11')">
+                <img src="images/movie11.jpg" alt="Movie 11">
+                <h3>Movie Title 11</h3>
+            </div>
+            <div class="movie" onclick="showMovieDetails('movie12')">
+                <img src="images/movie12.jpg" alt="Movie 12">
+                <h3>Movie Title 12</h3>
+            </div>
+            <div class="movie" onclick="showMovieDetails('movie13')">
+                <img src="images/movie13.jpg" alt="Movie 13">
+                <h3>Movie Title 13</h3>
+            </div>
+            <div class="movie" onclick="showMovieDetails('movie14')">
+                <img src="images/movie14.jpg" alt="Movie 14">
+                <h3>Movie Title 14</h3>
+            </div>
+            <div class="movie" onclick="showMovieDetails('movie15')">
+                <img src="images/movie15.jpg" alt="Movie 15">
+                <h3>Movie Title 15</h3>
+            </div>
+            <div class="movie" onclick="showMovieDetails('movie16')">
+                <img src="images/movie16.jpg" alt="Movie 16">
+                <h3>Movie Title 16</h3>
+            </div>
+            <div class="movie" onclick="showMovieDetails('movie17')">
+                <img src="images/movie17.jpg" alt="Movie 17">
+                <h3>Movie Title 17</h3>
+            </div>
+            <div class="movie" onclick="showMovieDetails('movie18')">
+                <img src="images/movie18.jpg" alt="Movie 18">
+                <h3>Movie Title 18</h3>
+            </div>
+            <div class="movie" onclick="showMovieDetails('movie19')">
+                <img src="images/movie19.jpg" alt="Movie 19">
+                <h3>Movie Title 19</h3>
+            </div>
+            <div class="movie" onclick="showMovieDetails('movie20')">
+                <img src="images/movie20.jpg" alt="Movie 20">
+                <h3>Movie Title 20</h3>
+            </div>
+        </div>
+    </section>
+
+    <div id="movie-detail" class="movie-detail">
+        <button onclick="closeMovieDetail()">Close</button>
+        <h2 id="movie-title"></h2>
+        <p id="movie-synopsis"></p>
+        <a id="movie-download" href="#" class="download-btn">Download</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Riz Stream.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
